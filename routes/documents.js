@@ -15,8 +15,8 @@ router.post("/save",async(req,res)=>{
     documents = await Documents.findById(body.data.id);
     }
     documents.title= body.data.title;
-    documents.malecontent= body.data.malecontent;
-    documents.femalecontent= body.data.femalecontent;
+    documents.malecontents= body.data.malecontents;
+    documents.femalecontents= body.data.femalecontents;
     documents.save().then(result=>{
         res.end(JSON.stringify(result));
     },err=>{

@@ -3,8 +3,8 @@ const Schema = mongoose.Schema;
 const schema = new Schema(
     {
         title:{type:String},
-        malecontent:{type:String},
-        femalecontent:{type:String}
+        malecontents:{type:String},
+        femalecontents:{type:String}
     }
 );
 const Documents = mongoose.model("documents", schema);
